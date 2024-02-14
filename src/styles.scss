@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/scss/app.scss";
+
+body{
+    font-family: "Nunito Sans", sans-serif !important;
+}
+.font-nunito {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+// Colors 
+.dark-grey{color: $dark-gray !important;}
+
+.font-12{font-size: 12px !important;}
+.font-14{font-size: 14px !important;}
+.font-16{font-size: 16px !important;}
+.font-18{font-size: 18px !important;}
+.font-20{font-size: 20px !important;}
+
+.fw-600{font-weight: 600 !important;}
