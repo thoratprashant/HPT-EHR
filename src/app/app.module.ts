@@ -10,8 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { LoginComponent } from './component/auth/login/login.component';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader'; 
+import { AuthLayoutComponent } from './component/auth/auth-layout/auth-layout.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -20,8 +20,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent
+    AppComponent, 
+    AuthLayoutComponent
   ],
   imports: [
     BrowserModule,

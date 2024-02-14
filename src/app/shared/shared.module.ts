@@ -51,6 +51,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedRoutingModule,
     NgbModule,
     ReactiveFormsModule,
@@ -59,6 +60,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     TranslateModule.forRoot(),
   ],
   exports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     ContentComponent,
     FeathericonComponent,
     LoaderComponent,
