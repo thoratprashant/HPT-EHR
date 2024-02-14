@@ -23,7 +23,8 @@ import { SearchComponent } from './component/header/search/search.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TapToTopComponent } from './component/tap-to-top/tap-to-top.component';
-import { LoaderComponent } from './component/loader/loader.component';
+import { LoaderComponent } from './component/loader/loader.component'; 
+import { MaterialModule } from './material.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -47,7 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BreadcrumbComponent,
     SearchComponent,
     TapToTopComponent,
-    LoaderComponent,
+    LoaderComponent, 
   ],
   imports: [
     CommonModule,
@@ -55,7 +56,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SharedRoutingModule,
     NgbModule,
     ReactiveFormsModule,
-    FormsModule,
+    FormsModule, 
     AngularSvgIconModule.forRoot(),
     TranslateModule.forRoot(),
   ],
@@ -70,7 +71,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BreadcrumbComponent,
     TapToTopComponent,
     TranslateModule,
-    NgbModule
+    NgbModule, 
+    MaterialModule
   ]
 })
 export class SharedModule { }
