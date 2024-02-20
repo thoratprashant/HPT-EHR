@@ -25,6 +25,8 @@ input, p,
 .fw-600{font-weight: 600 !important;} 
 .fw-800{font-weight: 800 !important;} 
 
+.min-width-unset{min-width: unset !important;}
+
 .form-control{
     background-color: rgba(51, 191, 191, 0.0588235294) !important;
     transition: all 0.3s ease;
@@ -78,40 +80,39 @@ a{
     .mat-horizontal-stepper-wrapper{
         .mat-horizontal-stepper-header-container{
             width: 70%;
-            margin: 0 auto;
-            .mat-step-header{
-                pointer-events: none;
-                &.cdk-focused,
-                &:hover{
-                    background-color: transparent !important;
-                }
-               
-                .mat-step-icon{
-                    background-color: #F5F6F9; 
-                    color: #848789;
-                    &.mat-step-icon-selected{
-                        background-color: #31B7B7; 
-                        color: #fff;
-                    }
-                    .mat-step-icon-content{
-                        font-weight: 700;
-                        font-family: "Nunito Sans", sans-serif;
-                    }
-                }
-                .mat-step-label{
-                    font-size: 16px;
-                    color: #848789;
-                    font-family: "Nunito Sans", sans-serif;
-                    &.mat-step-label-selected {
-                        color: #1F2F3E;
-                        font-weight: 700;
-                    }
-                }
-            }
+            margin: 0 auto; 
         }
         .mat-horizontal-content-container{
             padding: 14px 0 0 0 ;
         }
+    }
+}
+.mat-step-header{
+    pointer-events: none;
+    &.cdk-focused,
+    &:hover{
+        background-color: transparent !important;
+    } 
+}
+.mat-step-icon{
+    background-color: #F5F6F9 !important; 
+    color: #848789 !important;
+    &.mat-step-icon-selected{
+        background-color: #31B7B7 !important; 
+        color: #fff !important;
+    }
+    .mat-step-icon-content{
+        font-weight: 700 !important;
+        font-family: "Nunito Sans", sans-serif !important;
+    }
+}
+.mat-step-label{
+    font-size: 16px !important;
+    color: #848789 !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    &.mat-step-label-selected {
+        color: #1F2F3E !important;
+        font-weight: 700 !important;
     }
 }
 
@@ -130,6 +131,47 @@ a{
     }
 }
 
+// Checkbox
+.mat-mdc-checkbox{
+    .mdc-form-field{
+        .mdc-checkbox{
+            .mdc-checkbox__background{ 
+                background-color:#F5F6F9 !important;
+                border:1px solid #ccc !important;
+            }
+        } 
+    }
+    &.mat-mdc-checkbox-checked{
+        .mdc-form-field{
+            .mdc-checkbox{
+                .mdc-checkbox__background{
+                    border-color:#31B7B7 !important;
+                    background-color:#31B7B7 !important;
+                    border:1px !important;
+                }
+            }
+        }
+    }
+}
+.mdc-label{
+    margin-bottom: 0 !important;
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 14px !important;
+    color: #212529 !important;
+    font-weight: 400 !important;
+}
+.mdc-radio__background{
+    width: 24px;
+    height: 24px;
+    .mdc-radio__outer-circle{
+        border-width: 1px;
+        border-color:#ccc;
+    }
+}
+.mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle,
+.mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle{
+    border-color: #31B7B7 !important;
+} 
 
 /* Importing Bootstrap SCSS file. */
 // @import 'bootstrap/scss/bootstrap';
