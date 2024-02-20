@@ -1,15 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/scss/app.scss";
-
-body{
-    font-family: "Nunito Sans", sans-serif !important;
-}
+ 
+body,.mat-primary,
+.text,select,h1,h2,h3,h4,h5,h6,
+input, p, 
+.col-form-label,
+.dropdown-menu,
 .font-nunito {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif !important;
 }
 
 // Colors 
 .dark-grey{color: $dark-gray !important;}
+.clr--DF0404{color: #DF0404;}
+.clr--fff{color: #fff;}
 
 .font-12{font-size: 12px !important;}
 .font-14{font-size: 14px !important;}
@@ -17,5 +21,115 @@ body{
 .font-18{font-size: 18px !important;}
 .font-20{font-size: 20px !important;}
 
-.fw-600{font-weight: 600 !important;}
+.fw-500{font-weight: 500 !important;}
+.fw-600{font-weight: 600 !important;} 
+.fw-800{font-weight: 800 !important;} 
+
+.form-control{
+    background-color: rgba(51, 191, 191, 0.0588235294) !important;
+    transition: all 0.3s ease;
+    border-color: #DED2D9; 
+    font-size: 14px;
+    color: #212529;
+    padding: 12px 10px;
+    box-shadow: none; 
+    &:focus{
+        border: 1px solid #b9c1cc;
+        box-shadow: none !important;
+    }
+}
+.col-form-label{
+    font-size: 14px !important;
+    color: #1F2F3E !important;
+    display: flex;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.calender--btn{
+    background: #31B7B7;
+    border-color: #31B7B7;
+}
+a{
+    letter-spacing: 0 !important;
+}
+.checkbox--rounded{
+    label{
+        padding-left: 22px;
+        &::before{
+            width: 24px;
+            height: 24px;
+            border-radius: 18px !important;
+            border-color: #ccc;
+        }
+    }
+    &.checkbox-primary{
+        input[type=checkbox]:checked + label::before{
+            color: #fff;
+            background-color: #31B7B7;
+            line-height: 1.7;
+            font-weight: bold;
+        }
+    }
+    
+}
  
+.mat-stepper-horizontal{
+    .mat-horizontal-stepper-wrapper{
+        .mat-horizontal-stepper-header-container{
+            width: 70%;
+            margin: 0 auto;
+            .mat-step-header{
+                pointer-events: none;
+                &.cdk-focused,
+                &:hover{
+                    background-color: transparent !important;
+                }
+               
+                .mat-step-icon{
+                    background-color: #F5F6F9; 
+                    color: #848789;
+                    &.mat-step-icon-selected{
+                        background-color: #31B7B7; 
+                        color: #fff;
+                    }
+                    .mat-step-icon-content{
+                        font-weight: 700;
+                        font-family: "Nunito Sans", sans-serif;
+                    }
+                }
+                .mat-step-label{
+                    font-size: 16px;
+                    color: #848789;
+                    font-family: "Nunito Sans", sans-serif;
+                    &.mat-step-label-selected {
+                        color: #1F2F3E;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .mat-horizontal-content-container{
+            padding: 14px 0 0 0 ;
+        }
+    }
+}
+
+.mat-mdc-raised-button{
+    &.mat-primary{
+        background-color: #31B7B7 !important;
+        font-weight: 600;
+    }
+}
+.mdc-button--outlined{
+    &.mat-primary{
+        border-color: #31B8B8 !important;
+        color: #31B8B8 !important;
+        padding: 0 6px;
+        font-weight: 600;
+    }
+}
+
+
+/* Importing Bootstrap SCSS file. */
+// @import 'bootstrap/scss/bootstrap';

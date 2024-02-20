@@ -6,6 +6,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { LoginComponent } from './login/login.component'; 
 import { SignupPatientComponent } from './signup-patient/signup-patient.component';
+import { MatStepperModule } from '@angular/material/stepper';
  
 
 @NgModule({
@@ -19,6 +20,7 @@ import { SignupPatientComponent } from './signup-patient/signup-patient.componen
     ReactiveFormsModule, 
     SharedModule, 
     AuthRoutingModule, 
+    MatStepperModule
   ],
 })
 export class AuthModule {}

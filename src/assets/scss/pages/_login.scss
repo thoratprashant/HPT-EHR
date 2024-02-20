@@ -108,7 +108,7 @@
 
 .show-hide {
   position: absolute;
-  top: 52px;
+  top: 24px !important;
   right: 20px;
   transform: translateY(-50%);
 
@@ -116,6 +116,7 @@
     cursor: pointer;
     font-size: 13px;
     color: var(--theme-default);
+    font-family: "Nunito Sans", sans-serif !important;
 
     &.show {
       &:before {
