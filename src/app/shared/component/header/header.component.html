@@ -6,41 +6,12 @@
     <svg class="stroke-icon toggle-sidebar" (click)="openMenu()">
       <use class="status_toggle middle sidebar-toggle" href="assets/svg/icon-sprite.svg#Grid"> </use>
     </svg>
-    <div class="col-auto p-0">
-      <app-search></app-search>
-    </div>
+   
     <div class="nav-right col-auto pull-right right-header p-0 ms-auto">
-      <ul class="nav-menus" [class.open]="open">
-        <li class="serchinput">
-          <div class="serchbox" (click)="openSearch()">
-            <svg>
-              <use href="assets/svg/icon-sprite.svg#Search"></use>
-            </svg>
-          </div>
-          <div class="form-group search-form" [ngClass]="open ? 'open' : ''">
-            <input class="demo-input Typeahead-input form-control-plaintext w-100" [class.open]="open"
-              [(ngModel)]="text" [ngModelOptions]="{ standalone: true }" (keyup)="searchTerm(text)" type="text"
-              placeholder="Type to Search .." name="q" title="" autocomplete="off">
-          </div>
-        </li>
+      <ul class="nav-menus" [class.open]="open"> 
         <li class="onhover-dropdown">
           <app-notification></app-notification>
-        </li>
-        <li class="onhover-dropdown">
-          <app-bookmark></app-bookmark>
-        </li>
-        <li class="onhover-dropdown message-box">
-          <app-message></app-message>
-        </li>
-        <li class="cart-nav onhover-dropdown">
-          <app-cart></app-cart>
-        </li>
-        <li>
-          <app-theme></app-theme>
-        </li>
-        <li class="language-nav" (click)="languageToggle()">
-          <app-language></app-language>
-        </li>
+        </li>   
         <li class="profile-nav onhover-dropdown pe-0 py-0">
           <app-profile></app-profile>
         </li>
