@@ -17,7 +17,7 @@ const routes: Routes = [
     loadChildren: () => import('./component/auth/auth.module').then(mod => mod.AuthModule), 
   },
   {
-    path: '',
+    path: 'xyz',
     component: ContentComponent,
     children: dashData
 

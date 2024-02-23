@@ -229,6 +229,7 @@
             display: inline-block;
             position: relative;
             margin-right: 5px;
+           
             &.search-box {
               display: none;
             }
@@ -265,7 +266,7 @@
                   }
                 }
               }
-            }
+            } 
             &::after {
               content: "";
               position: absolute;
@@ -279,9 +280,9 @@
                 left: unset;
               }
             }
-            &:nth-child(7) {
+            &:nth-child(2) {
               &::after {
-                left: 70px;
+                left: 50px;
                 [dir="rtl"] & {
                   right: 65px;
                   left: unset;
