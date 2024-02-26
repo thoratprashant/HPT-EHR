@@ -39,28 +39,96 @@ export class NavservicesService {
 
 
   Nvabarmenu: Menu[] = [
+    // {
+    //   id: 1,
+    //   icon: 'Grid',
+    //   mainTitle: 'page',
+    //   headTitle1: 'pages',
+    //   item: [
+    //     {
+    //       title: 'pages',
+    //       icon: 'sample-page',
+    //       type: 'sub',
+    //       active: true,
+    //       children: [
+    //         { path: '/pages/sample-page1', title: 'Sample-page1', type: 'link' },
+    //         { path: '/pages/sample-page2', title: 'Sample-page2', type: 'link' },
+    //       ],
+    //     },
+    //     {
+    //       title: 'Sample-page',
+    //       icon: 'sample-page',
+    //       type: 'link',
+    //       active: true,
+    //       path: '/sample-page',
+    //       bookmark:true
+    //     },
+    //   ]
+    // },
+
     {
       id: 1,
       icon: 'Grid',
-      mainTitle: 'page',
-      headTitle1: 'pages',
-      item: [
-        {
-          title: 'pages',
-          icon: 'sample-page',
-          type: 'sub',
-          active: false,
-          children: [
-            { path: '/pages/sample-page1', title: 'Sample-page1', type: 'link' },
-            { path: '/pages/sample-page2', title: 'Sample-page2', type: 'link' },
-          ],
-        },
+      mainTitle: 'Dashboard',
+      headTitle1: 'Dashboard',
+      path: '/pages/sample-page1',
+      active: false,
+      item: [ 
         {
           title: 'Sample-page',
           icon: 'sample-page',
           type: 'link',
-          active: false,
-          path: '/sample-page',
+          active: true,
+          path: '',
+          bookmark:true
+        },
+      ]
+    },
+    {
+      id: 2,
+      icon: 'Grid',
+      mainTitle: 'User Management',
+      headTitle1: 'User Management',
+      path: '/system-admin', 
+      item: [ 
+        {
+          title: 'Practice Admin',
+          icon: 'sample-page',
+          type: 'link',
+          active: true,
+          path: ' ',
+          bookmark:true
+        },
+        {
+          title: 'Therapists',
+          icon: 'sample-page',
+          type: 'link',
+          active: true,
+          path: ' ',
+          bookmark:true
+        },
+        {
+          title: 'Support Team',
+          icon: 'sample-page',
+          type: 'link',
+          active: true,
+          path: ' ',
+          bookmark:true
+        },
+        {
+          title: 'Billing Team',
+          icon: 'sample-page',
+          type: 'link',
+          active: true,
+          path: ' ',
+          bookmark:true
+        },
+        {
+          title: 'Patients',
+          icon: 'sample-page',
+          type: 'link',
+          active: true,
+          path: '/system-admin/practice-admin',
           bookmark:true
         },
       ]

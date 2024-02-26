@@ -702,11 +702,11 @@
   }
   .sidebar-wrapper {
     .logo-wrapper {
-      padding: 20px;
+      padding: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: $sidebar-dark;
+      background-color: #fff;
     }
     .back-btn {
       display: none;
@@ -861,10 +861,10 @@
                         svg {
                           transition: all 0.3s ease;
                           &.stroke-icon {
-                            stroke: var(--theme-default) !important;
+                            stroke: #fff !important;
                           }
                           &.fill-icon {
-                            fill: var(--theme-default) !important;
+                            fill: #fff !important;
                           }
                         }
                       }
@@ -1519,18 +1519,18 @@
             li {
               a {
                 color: $theme-font-color;
+                padding: 20px 5px;
                 span {
                   text-transform: capitalize;
                   color: $dark-color;
                   font-weight: 500;
                   letter-spacing: 1px;
-                  font-size: 14px;
+                  font-size: 12px;
                 }
                 &.active {
-                  color: $primary-color;
-                  border-radius: 6px;
+                  background-color: #33BFBF;
                   span {
-                    color: $primary-color;
+                    color: #fff;
                   }
                 }
                 &:not(.active) {
@@ -1668,8 +1668,7 @@
                 >span {
                   display: block;
                   font-weight: 500;
-                  letter-spacing: 0px;
-                  font-size: 14px;
+                  letter-spacing: 0px; 
                   margin-top: 10px;
                   word-break: break-word;
                 }
@@ -1758,8 +1757,7 @@
           background-color: $sidebar-dark;
           .sidebar-links {
             .sidebar-list {
-              padding: 20px;
-              
+              padding: 0; 
               cursor: pointer;
               .sidebar-submenu {
                 li {
@@ -1774,7 +1772,7 @@
                 }
               }
               span {
-                color: var(--white);
+                color:#000;
                 font-weight: 600;
               }
             }
@@ -1786,13 +1784,14 @@
                 .main-submenu {
                   .d-flex {
                     font-weight: 600;
-                    color: $submenu-font-color;
+                    color:#1F2F3E;
                     align-items: center;
                     font-size: 15px;
+                    padding: 0 !important;
                     &.active {
-                      color: $primary-color;
+                      color: red;
                       svg {
-                        stroke: $primary-color !important;
+                        stroke:red !important;
                       }
                       .arrow {
                         transform: rotate(90deg);
@@ -1891,7 +1890,7 @@
                   width: 26px;
                   height: 26px;
                   vertical-align: middle;
-                  stroke: $white;
+                  stroke: #1F2F3E;
                   &.fill-icon {
                     fill: $white;
                     stroke: none !important;

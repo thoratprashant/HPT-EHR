@@ -10,18 +10,18 @@ const routes: Routes = [
       {
         path: 'sample-page1',
         component: SamplePage1Component,
-        data: {
-          title: "Sample-page1",
-          breadcrumb: "Default",
-        }
+        // data: {
+        //   title: "Sample-page1",
+        //   breadcrumb: "Default",
+        // }
       },
       {
         path: 'sample-page2',
         component: SamplePage2Component,
-        data: {
-          title: "Sample-page2",
-          breadcrumb: "Sample-page2",
-        }
+        // data: {
+        //   title: "Sample-page2",
+        //   breadcrumb: "Sample-page2",
+        // }
       },
     ]
   }
