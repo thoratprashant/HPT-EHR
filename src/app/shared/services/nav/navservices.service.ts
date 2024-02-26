@@ -72,7 +72,7 @@ export class NavservicesService {
       mainTitle: 'Dashboard',
       headTitle1: 'Dashboard',
       path: '/pages/sample-page1',
-      active: false,
+      active: true,
       item: [ 
         {
           title: 'Sample-page',
@@ -89,14 +89,15 @@ export class NavservicesService {
       icon: 'Grid',
       mainTitle: 'User Management',
       headTitle1: 'User Management',
-      path: '/system-admin', 
+      path: '/system-admin/Practice Admin', 
+      active: true,
       item: [ 
         {
           title: 'Practice Admin',
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: ' ',
+          path: '/system-admin/practice-admin',
           bookmark:true
         },
         {
@@ -104,7 +105,7 @@ export class NavservicesService {
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: ' ',
+          path: '/system-admin/therapists',
           bookmark:true
         },
         {
@@ -112,7 +113,7 @@ export class NavservicesService {
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: ' ',
+          path: '/system-admin/support-team',
           bookmark:true
         },
         {
@@ -120,7 +121,7 @@ export class NavservicesService {
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: ' ',
+          path: '/system-admin/billing-team',
           bookmark:true
         },
         {
@@ -128,7 +129,7 @@ export class NavservicesService {
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: '/system-admin/practice-admin',
+          path: '/system-admin/patients',
           bookmark:true
         },
       ]
