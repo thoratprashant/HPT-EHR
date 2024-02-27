@@ -71,16 +71,15 @@ export class NavservicesService {
       icon: 'Grid',
       mainTitle: 'Dashboard',
       headTitle1: 'Dashboard',
-      path: '/pages/sample-page1',
-      active: true,
+      // path: '/pages/sample-page1',
+      active: false,
       item: [ 
         {
           title: 'Sample-page',
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: '',
-          bookmark:true
+          path: '', 
         },
       ]
     },
@@ -89,48 +88,43 @@ export class NavservicesService {
       icon: 'Grid',
       mainTitle: 'User Management',
       headTitle1: 'User Management',
-      path: '/system-admin/Practice Admin', 
-      active: true,
+      // path: '/system-admin/Practice Admin', 
+      active: false,
       item: [ 
         {
           title: 'Practice Admin',
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: '/system-admin/practice-admin',
-          bookmark:true
+          path: '/system-admin/practice-admin', 
         },
         {
           title: 'Therapists',
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: '/system-admin/therapists',
-          bookmark:true
+          path: '/system-admin/therapists', 
         },
         {
           title: 'Support Team',
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: '/system-admin/support-team',
-          bookmark:true
+          path: '/system-admin/support-team', 
         },
         {
           title: 'Billing Team',
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: '/system-admin/billing-team',
-          bookmark:true
+          path: '/system-admin/billing-team', 
         },
         {
           title: 'Patients',
           icon: 'sample-page',
           type: 'link',
           active: true,
-          path: '/system-admin/patients',
-          bookmark:true
+          path: '/system-admin/patients', 
         },
       ]
     },

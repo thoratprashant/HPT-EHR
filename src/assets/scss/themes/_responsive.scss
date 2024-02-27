@@ -612,7 +612,7 @@
       }
       .page-body-wrapper {
         .page-body {
-          padding: 0 20px 0 20px !important;
+          padding: 30px 20px 0 20px !important;
         }
       }
     }
@@ -1079,13 +1079,13 @@
       }
     }
   }
-  .page-wrapper {
-    &.compact-small {
-      .toggle-sidebar {
-        margin: 0;
-      }
-    }
-  }
+  // .page-wrapper {
+  //   &.compact-small {
+  //     .toggle-sidebar {
+  //       margin: 0;
+  //     }
+  //   }
+  // }
   .btn-group {
     .btn {
       padding: 0.375rem 1.25rem;
@@ -1592,9 +1592,17 @@
     &.compact-small{
       .toggle-sidebar{
         display: block;
+        margin-right: 5px;
       }
     }
-  } 
+    .page-header{
+      .header-wrapper{
+        .hosp--name{
+          font-size: 14px;
+        }
+      }
+    }
+  }  
   .page-wrapper {
     .page-header {
       .header-wrapper {
@@ -2446,13 +2454,11 @@
           >ul {
             >li {
               &:nth-child(2)  {
-                display: none;
-              }
-              &:nth-child(7) {
-                &::after {
+                .user{
                   display: none;
                 }
-              }
+                
+              } 
             }
           }
         }
@@ -2533,11 +2539,11 @@
       }
     }
   }
-  .profile-media {
-    .flex-grow-1 {
-      display: none;
-    }
-  }
+  // .profile-media {
+  //   .flex-grow-1 {
+  //     display: none;
+  //   }
+  // }
   .form-inline {
     .form-group:not(.form-control-search) {
       width: 100%;
@@ -3722,7 +3728,7 @@
     }
     .page-header {
       .header-wrapper {
-        padding: 12px 15px !important;
+        padding: 12px 6px !important;
         .nav-right {
           >ul {
             top: 58px;
@@ -3746,11 +3752,7 @@
               .flag-icon {
                 font-size: 14px !important;
               }
-              .profile-media {
-                img {
-                  width: 25px;
-                }
-              }
+            
             }
           }
           .notification-dropdown {
