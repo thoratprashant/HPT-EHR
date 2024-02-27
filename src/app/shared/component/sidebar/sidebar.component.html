@@ -19,6 +19,10 @@
          <a [routerLink]="mainMenu.path" class="sidebar-link sidebar-title" (click)=" toggleMenu(mainMenu)" [class.active]="mainMenu.active == true">
             @if(mainMenu.icon){
                <app-svg-icon [icon]="mainMenu.icon"></app-svg-icon>
+               <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="dashboard"></mat-icon>
+               <span class="material-symbols-outlined">
+                dashboard
+                </span> -->
              }
             <span>{{mainMenu.mainTitle! | translate }}</span>
           </a>

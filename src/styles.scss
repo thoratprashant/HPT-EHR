@@ -14,6 +14,7 @@ input, p,
 .dark-grey{color: $dark-gray !important;}
 .text-primary {color: $primary-color !important;;}
 .clr--DF0404{color: #DF0404;}
+.clr--1F2F3E{color: #1F2F3E !important;}
 .clr--fff{color: #fff;}
 
 .font-12{font-size: 12px !important;}
@@ -27,6 +28,37 @@ input, p,
 .fw-800{font-weight: 800 !important;} 
 
 .min-width-unset{min-width: unset !important;}
+
+.card{
+    .card-header{
+        .form-group{
+            .form-control{
+                background-color: #F5F6F9 !important;
+                transition: all 0.3s ease;
+                border-color: #CCC; 
+                font-size: 12px;
+                color: #212529;
+                padding: 9px 10px;
+                box-shadow: none; 
+                &:focus{
+                    border: 1px solid #b9c1cc;
+                    box-shadow: none !important;
+                }
+            }
+            .search--fields{
+                position: absolute;
+                top: 1px;
+                right: 16px;
+                .mat-icon{
+                    font-size: 23px;
+                    width: 23px;
+                    height: 23px;
+                    color: #1F2F3E;
+                }
+            }
+        }
+    }
+}
 
 .form-control{
     background-color: rgba(51, 191, 191, 0.0588235294) !important;
@@ -56,6 +88,105 @@ input, p,
 a{
     letter-spacing: 0 !important;
 }
+
+// Angular material Table (Start here)
+.cust--mat--table--wrapper{
+    overflow: auto;
+    .cust--mat--table{
+        &.mat-mdc-table{
+            box-shadow: unset;
+            thead{
+                tr{
+                    th{
+                        border-bottom-color:#EEE;
+                        &:first-child{
+                            padding-left: 0;
+                        } 
+                        .mat-sort-header-container{
+                            .mat-sort-header-content{
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: #1F2F3E;
+                                font-family: "Nunito Sans", sans-serif !important;
+                            }
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    height: auto;
+                    td{ 
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #292D32;
+                        padding: 24px 10px;
+                        border-bottom-color:#EEE;
+                        font-family: "Nunito Sans", sans-serif !important;
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+
+
+.mat-mdc-paginator{
+    .mat-mdc-paginator-outer-container{
+        .mat-mdc-paginator-container{
+            justify-content: space-between;
+            .mat-mdc-paginator-page-size{
+                .mat-mdc-paginator-page-size-label{
+                    font-family: "Nunito Sans", sans-serif !important;
+                    color: #31B8B8;
+                    font-weight: 400; 
+                    font-size: 14px;
+                }
+                .mat-mdc-form-field{
+                    .mat-mdc-form-field-flex{
+                        .mat-mdc-form-field-infix{
+                            .mat-mdc-select{
+                                line-height: 11px;
+                                .mat-mdc-select-value{
+                                    color: #31B8B8;
+                                    font-size: 14px;
+                                    font-family: "Nunito Sans", sans-serif !important;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .mat-mdc-paginator-range-actions{
+                .mat-mdc-paginator-range-label{
+                    font-family: "Nunito Sans", sans-serif !important;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.mat-mdc-select-panel{
+    .mat-mdc-option{
+        .mdc-list-item__primary-text{
+            font-family: "Nunito Sans", sans-serif !important;
+        }
+        &.mat-mdc-option-active{
+            .mdc-list-item__primary-text{
+                color: #31B7B7 !important;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+// Angular material Table (End here)
+
 .checkbox--rounded{
     label{
         padding-left: 22px;
@@ -122,6 +253,10 @@ a{
         background-color: #31B7B7 !important;
         font-weight: 600;
     }
+}
+.mdc-button{
+    letter-spacing: unset !important;
+    box-shadow: none !important;
 }
 .mdc-button--outlined{
     &.mat-primary{

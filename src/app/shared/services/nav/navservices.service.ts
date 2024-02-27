@@ -68,7 +68,7 @@ export class NavservicesService {
 
     {
       id: 1,
-      icon: 'Grid',
+      icon: 'home',
       mainTitle: 'Dashboard',
       headTitle1: 'Dashboard',
       // path: '/pages/sample-page1',
@@ -85,7 +85,7 @@ export class NavservicesService {
     },
     {
       id: 2,
-      icon: 'Grid',
+      icon: 'user',
       mainTitle: 'User Management',
       headTitle1: 'User Management',
       // path: '/system-admin/Practice Admin', 
@@ -93,7 +93,7 @@ export class NavservicesService {
       item: [ 
         {
           title: 'Practice Admin',
-          icon: 'sample-page',
+          icon: 'user',
           type: 'link',
           active: true,
           path: '/system-admin/practice-admin', 
@@ -107,7 +107,7 @@ export class NavservicesService {
         },
         {
           title: 'Support Team',
-          icon: 'sample-page',
+          icon: 'info',
           type: 'link',
           active: true,
           path: '/system-admin/support-team', 

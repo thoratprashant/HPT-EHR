@@ -25,7 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TapToTopComponent } from './component/tap-to-top/tap-to-top.component';
 import { LoaderComponent } from './component/loader/loader.component'; 
 import { MaterialModule } from './material.module';
-import { SystemAdminLayoutComponent } from './component/layout/system-admin-layout/system-admin-layout.component';
+import { SystemAdminLayoutComponent } from './component/layout/system-admin-layout/system-admin-layout.component'; 
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -53,8 +53,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoaderComponent, 
   ],
   imports: [
-    CommonModule,
+    CommonModule, 
     FormsModule,
+    MaterialModule,
     SharedRoutingModule,
     NgbModule,
     ReactiveFormsModule,
