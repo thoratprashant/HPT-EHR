@@ -128,8 +128,30 @@ export class NavservicesService {
         },
       ]
     },
-
-
+    {
+      id: 3,
+      icon: 'home',
+      mainTitle: 'Manage Practice',
+      headTitle1: 'Manage Practice',
+      // path: '/pages/sample-page1',
+      active: false, 
+    },
+    {
+      id: 4,
+      icon: 'home',
+      mainTitle: 'Conversations',
+      headTitle1: 'Conversations',
+      // path: '/pages/sample-page1',
+      active: false, 
+    },
+    {
+      id: 5,
+      icon: 'home',
+      mainTitle: 'E-Fax',
+      headTitle1: 'E-Fax',
+      // path: '/pages/sample-page1',
+      active: false, 
+    },  
   ]
   items = new BehaviorSubject<Menu[]>(this.Nvabarmenu);
 

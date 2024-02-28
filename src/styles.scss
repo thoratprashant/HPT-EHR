@@ -61,7 +61,7 @@ input, p,
 }
 
 .form-control{
-    background-color: rgba(51, 191, 191, 0.0588235294) !important;
+    background-color: #fff !important;
     transition: all 0.3s ease;
     border-color: #DED2D9; 
     font-size: 14px;
@@ -71,6 +71,15 @@ input, p,
     &:focus{
         border: 1px solid #b9c1cc;
         box-shadow: none !important;
+    }
+    &:disabled{
+        background-color: #F5F5F5 !important;
+    }
+    &.form-control-md{
+        border-color: #CCC; 
+        color: #212529;
+        padding: 8px 10px;
+        box-shadow: none;
     }
 }
 .col-form-label{
@@ -186,6 +195,34 @@ a{
 }
 
 // Angular material Table (End here)
+
+// Bootstrap Modal (Start here)
+.cust--modal--wrapper{
+    .modal-dialog{
+        &.modal-md{
+            max-width: 423px;
+            .modal-content{
+                .modal-header{
+                    border:none;
+                    .modal-title{
+                        color: #1F2F3E;
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-family: "Nunito Sans", sans-serif !important;
+                    }
+                }
+                .modal-body{
+                    padding: 0 15px;
+                }
+                .modal-footer{
+                    padding: 15px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+// Bootstrap Modal (End here)
 
 .checkbox--rounded{
     label{

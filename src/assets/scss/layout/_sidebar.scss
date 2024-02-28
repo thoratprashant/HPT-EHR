@@ -114,9 +114,10 @@
     box-shadow: $main-header-shadow-1;
     .header-wrapper {
       align-items: center;
-      padding: 20px 40px;
+      padding: 20px 30px;
       position: relative;
       margin-left: 0px;
+      box-shadow: 0 0 5px rgba(72, 89, 102, 0.10);
       .hosp--name{
         font-size: 16px; 
         display: -webkit-box;
