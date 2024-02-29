@@ -196,6 +196,29 @@ a{
 
 // Angular material Table (End here)
 
+// Alert Modal (Start here)
+.custom-alert-container{
+    width: 423px; 
+    .mat-mdc-dialog-container{
+        .alert--wrapper{
+            padding: 30px;
+            .info--icon{
+                font-size: 44px;
+                height: 44px;
+                width: 44px;
+                color: #31B7B7;
+            }
+            .alert--note{
+                font-size: 16px;
+                font-family: "Nunito Sans", sans-serif !important;
+                color: #000;
+                margin: 27px 0;
+            }
+        }
+    }
+}
+// Alert Modal (End here)
+
 // Bootstrap Modal (Start here)
 .cust--modal--wrapper{
     .modal-dialog{

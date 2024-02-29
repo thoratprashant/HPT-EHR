@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { AlertComponent } from 'src/app/shared/comman/alert/alert.component';
 
 @Component({
   selector: 'app-profile',
@@ -8,11 +10,16 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public dialog: MatDialog) { }
 
   logOut() {
-    localStorage.clear();
-    this.router.navigate(['/auth/login'])
+    const dialogRef = this.dialog.open(AlertComponent,{
+      panelClass: 'custom-alert-container',
+    });
+
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log(`Dialog result: ${result}`);
+    // });
   }
 
 }

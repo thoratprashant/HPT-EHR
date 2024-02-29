@@ -51,6 +51,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SearchComponent,
     TapToTopComponent,
     LoaderComponent, 
+    
   ],
   imports: [
     CommonModule, 
